@@ -1,0 +1,59 @@
+Apa Itu Css Preprocessor?
+
+1.CSS biasa digunakan oleh developer utk membuat styling pada website
+2.namun penggunaan css masih kurang efektif karena tidak adanya fitur variabel dan juga 
+fungsi yg bisa digunakan kembali
+3.utk memenuhi kebutuhan developer akan hal ini,maka hadirla css Preprocessor
+4.css Preprocessor merupakan program yg memungkinkan kita menghasilkn css dari sintaks khusus Preprocessor
+itu sendiri
+5.css Preprocessor memberikan fitur yg blum ada didalam css murni,seperti membuat variabel,
+fungsi,dan sebginya
+6.dengan menggunakan css Preprocessor,penulisan css menjadi lebih terstruktur sehingga membuat lebi efisien
+
+manfaat css Preprocessor
+1.dengan fitur-fitur canggih yg disediakan css Preprocessor,developer akan sangat terbantu
+utk pencapain penulisan kode yg dapat digunakan kembali,dipelihara dan diperluas dalam css
+2.dengan menggunakan css Preprocessor,developer bisa meningkatkan produktifitas dan jumlah kode 
+yg ditulis lebih sedikit 
+
+macam" css Preprocessor
+sass,less,stylus
+
+Berkenalan Dengan Sass Less Stylus
+website SASS:https://sass-lang.com/
+website less:https://lesscss.org/
+
+
+Sass Values
+1.Sass mendukung sejumlah tipe nilai yg sebagian besar berasal langsung dari Css
+2.setiap ekspresi menghasilkn nilai dan variabel menyimpan nilai
+3.Numbers,bisa memiliki unit seperti 100px, atau bisa tidak memiliki unit seperti 12
+4.String,bisa memiliki tanda kutip seperti "Helvetica Neue", atau bisa tidak memiliki tnda kutip seperti bold
+5.Colors,bisa berupa kode Hex seprti #c6538c / berupa string nama color,atau beberapa fngsi sprti rgb(107,113,127) atau hsl(210,100%,20%)
+6.List dapat dipisahkan spasi / koma dan dapat dilampirkan didalam tanda kurung siku atau bisa juga tnpa kurung siku smaa sekali
+contoh:1.5em 1 em0 2em,Helvetica,arial,sans-serif,[col1-start]
+
+beberapa nilai yg berlaku khusus utk sass
+1.nilai boolean berupa true dan false
+2.nilai singleton null
+3.Maps yg mengaitkan nilai dengan key sprti("background":red,"foreground":pink)
+4.referensi fungsi dikembalikan oleh get-function() dan dipanggil dengan call()
+
+Numbers
+16px = 16 number,px unitsnya
+number bisa tidak memiliki unit,dan juga bisa memiliki unit yg kompleks.
+
+//string//
+sass mendukung dua jenis string yg struktur internalnya sama tetapi diterjemahkan secara berbeda,yaitu string yg diapit tnda kutip
+seperti "Helvetica Neue" dan string tanpa tanda kutip seperti bold
+
+keduanya mencakup berbagai jenis teks yg muncul  di css
+
+Lists
+1.pada sass,elemen dalam list dapat dipisahkan oleh koma(Helvetica,arial,sans-serif) atau spasi(10px 15px 0 0)
+2.tidak sprti kebanyakan bahasa lain list di sass tidak memerlukan tanda kurung khusus,ekspresi apapun
+yg dipisahkan koma atau spasi akan dianggap sbagai list
+3.namun demikian,kita masih diizinkan utk menulis list dengan tnda krung sprti([line1 line2])yg berguna saat mnggunakan
+grid-tempalte-colums
+4.list sass dapat berisi satu atau bahkan nol elemen,list elemen tunggal dapat ditulis(<ekspression>,) atau[<ekspresion>], 
+dan list elemen 0 dapat ditulis() atau []
