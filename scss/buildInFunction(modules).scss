@@ -1,0 +1,41 @@
+// buildInFunction(modules):merupakan fungsii bawaan sass
+// 1.color
+// 2.list
+// 3.map
+// 4.math
+// 5.meta
+// 6.selektro
+// 7.stirng
+//documentasi https://sass-lang.com/documenation/modules
+
+//Base
+$warna-dasar: salmon;
+h1 {
+    color: $warna-dasar;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+//buildInFunction(modules) hanya color saja
+//adjust-color
+// h2 {
+//     color: adjust-color($color: #000000, $red: 1, $green: 2, 
+//     $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
+//     //conntekan
+// }
+
+// h1 {
+    //     color: adjust-color($color: $warna-dasar, $red: 200, $green: 200, $blue: 100);
+    // }
+    
+    //https://www.canva.com/colors/color-wheel/
+    //buat adjust-hue yg artinya warda pada roda berputar
+
+    // h1 {
+    //     color: adjust-hue($warna-dasar, $degrees: 30deg);
+    // }
+
+    h1 {
+        color: complement($warna-dasar);
+    }

@@ -1,0 +1,37 @@
+//SASS variable
+
+// $secondary-color: red;
+// $thrity-color: green;
+// //catatan utk variabel
+// // variabel ga bisa diakses kalo dia ada dialam suatu selektor misal
+// // .main {
+// //     $primary-color: blue; //ini gabusa diakses selain di selektor main beserta turunannya
+// // }
+// // body {
+// //     $primary-color: blue !global;
+// //     background-color: $primary-color;
+
+// //     // .main {
+// //     //     background-color: $primary-color;
+// //     //  } //ini hanya dengan ini
+// //     //!global gunakan ini agar bisa diakses ke yg lain juga
+// // }
+
+// // .main {
+// //  background-color: $primary-color;
+// // }
+
+//penggunaan MAP
+//jadi kegunaan map ini kita bisa menyimpan value tanpa harus membuat 
+// variabel yg banyak utk satu value
+
+//contoh
+$alert: (
+    'danger':red,
+    'succes':green,
+    'warning':orange,
+);
+
+h1 {
+    color:map-get($alert , 'succes' )
+}

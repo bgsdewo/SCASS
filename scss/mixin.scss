@@ -1,0 +1,17 @@
+// mixin:kumpulan style yg dpt kita gunakan berulang-ulang
+
+// @mixin digunakan ketika kita membuat mixinnya
+// @include digunakan ketika kita memanggil kumpulan dari style tersebut/memanggil mixinnya
+
+// @import 'modules/mixin';
+// @import 'modules/header';
+// @import 'modules/container';
+// @import 'modules/footer';
+
+//yg diatas kalo make @import
+
+//kalo make use smaa aja    
+
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';

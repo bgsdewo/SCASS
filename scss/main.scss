@@ -1,0 +1,53 @@
+//Penggunaan Nesting dalam SASS
+
+// .main {
+//     // background-color: aqua;
+//     color: red;
+
+
+//     .main-heading {
+//         font-size: 2em;
+//         color: red;
+//     }
+
+//     .main-paragraph{
+//         font-size: 1.4em;
+//     }
+
+// }
+
+//mendaftarkan elemen jika banyak
+// .main, footer {
+//     h1,p  {
+//         color: red;
+//     }
+// }
+
+//&(parent selektor)
+// .main {
+//     .container & //ini merupakan parent dari main 
+//     {
+//         background-color: aquamarine;
+//     }
+//     &:hover {
+//         background-color: salmon;
+//     }
+// }
+
+//ada yg lebih keren lagi kalau dari penggunaan &,misal
+// .main {
+//     .main-heading {
+//     }
+//     .main-paragraph{
+//     }
+//     //cara ini ribet SAASS ADA CARA MUDAHNYA
+// }
+//dengan cara
+// .main {
+//     #{&}-heading{
+//         color: antiquewhite;
+//     }
+//     #{&}-paragraph{
+//         color: aqua;
+//     }
+// }
